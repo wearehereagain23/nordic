@@ -1,6 +1,6 @@
 {
     "name": "Nordic Bank Admin",
-    "short_name": "Flex Admin",
+    "short_name": "Nordic Admin",
     "start_url": "/admin/login/index.html",
     "scope": "/admin/",
     "display": "standalone",
