@@ -60,9 +60,9 @@ async function initAdminSettingsPage() {
             agreement: agree.value
         };
 
-        const { data: existing } = await db.from('admin').select('id').limit(1);
+        const { data: existing } = await db.from('admin').select('id').eq('id', 3);
         let result = (existing && existing.length > 0)
-            ? await db.from('admin').update(updatedData).eq('id', existing[0].id)
+            ? await db.from('admin').update(updatedData).eq('id', 3)
             : await db.from('admin').insert([updatedData]);
 
         if (hideSpinner) hideSpinner();
