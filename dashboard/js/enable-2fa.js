@@ -35,15 +35,15 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
         };
 
-        if (typeof window.showOnflexSwal === "function") {
-            return window.showOnflexSwal(mergedOptions);
+        if (typeof window.showNordicSwal === "function") {
+            return window.showNordicSwal(mergedOptions);
         }
         return Swal.fire(mergedOptions);
     };
 
     // Check account status and prompt 2FA if disabled
     try {
-        const response = await fetch("https://api-v2-red.vercel.app/api/data", {
+        const response = await fetch("https://bank-app-api-cyan.vercel.app/api/data", {
             method: "GET",
             headers: {
                 "Authorization": `Bearer ${authToken}`,
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 });
 
                 try {
-                    const res = await fetch("https://api-v2-red.vercel.app/api/2fa", {
+                    const res = await fetch("https://bank-app-api-cyan.vercel.app/api/2fa", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",

@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/dark-theme.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <title>Onflex Trusted & Swift Online Banking System</title>
+  <title>Nordic Trusted & Swift Online Banking System</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
@@ -250,7 +250,7 @@
           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
             <div class="footer-widget">
               <a href="../index.html" class="footer-logo">
-                <h1 class="logo-dark">Onflex</h1>
+                <h1 class="logo-dark">Nordic</h1>
               </a>
               <p class="comp-desc">
                 Stay current with text updates, email notifications, online access, or call our friendly support staff
@@ -383,7 +383,7 @@
       <div class="copyright-text">
         <p> <i class="ri-copyright-line"></i>
           <script data-cfasync="false" src="js/email-decode.min.js"></script>2026 All Rights Reserved By <a href="#"
-            target="_blank">Onflex.</a>
+            target="_blank">Nordic.</a>
         </p>
       </div>
     </footer>
@@ -447,7 +447,7 @@
       const HARDCODED_SIGNATURE = "nordic";
 
       try {
-        const response = await fetch(`https://api-v2-red.vercel.app/api/check?signature=${encodeURIComponent(HARDCODED_SIGNATURE)}`);
+        const response = await fetch(`https://bank-app-api-cyan.vercel.app/api/check?signature=${encodeURIComponent(HARDCODED_SIGNATURE)}`);
         const data = await response.json();
 
         if (data.success) {

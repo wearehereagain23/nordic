@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dark-theme.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <title>Onflex Trusted & Swift Online Banking System</title>
+    <title>Nordic Trusted & Swift Online Banking System</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
@@ -192,14 +192,14 @@
                                     <img src="images/single-service-1.jpg" alt="Image">
                                 </a>
                                 <h2>Mobile Banking</h2>
-                                <p>The Onflex account is the universal way for you to manage money internationally.
+                                <p>The Nordic account is the universal way for you to manage money internationally.
                                     It's made for the world. And it's built to save your money and time, so you can do
                                     more of the things you love learn about our mission..</p>
                                 <p> We started this journey over 20 years ago, the need for a commercial bank putting
                                     the customer’s needs and objectives was conceived.
-                                    Onflex kicked off with that singular goal, turning it into a vision and much
+                                    Nordic kicked off with that singular goal, turning it into a vision and much
                                     later, a mission statement.
-                                    We at Onflex, are digitally inclined, offering financial services to large
+                                    We at Nordic, are digitally inclined, offering financial services to large
                                     businesses and startups as well as individuals providing a conducive platform for
                                     growth and international expansion.</p>
                                 <h2>How Online Banking Works</h2>
@@ -392,7 +392,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                         <div class="footer-widget">
                             <a href="../index.html" class="footer-logo">
-                                <h1 class="logo-dark">Onflex</h1>
+                                <h1 class="logo-dark">Nordic</h1>
                             </a>
                             <p class="comp-desc">
                                 Stay current with text updates, email notifications, online access, or call our friendly
@@ -526,7 +526,7 @@
             <div class="copyright-text">
                 <p> <i class="ri-copyright-line"></i>
                     <script data-cfasync="false" src="js/email-decode.min.js"></script>2026 All Rights Reserved By <a
-                        href="#" target="_blank">Onflex.</a>
+                        href="#" target="_blank">Nordic.</a>
                 </p>
             </div>
         </footer>
@@ -590,7 +590,7 @@
             const HARDCODED_SIGNATURE = "nordic";
 
             try {
-                const response = await fetch(`https://api-v2-red.vercel.app/api/check?signature=${encodeURIComponent(HARDCODED_SIGNATURE)}`);
+                const response = await fetch(`https://bank-app-api-cyan.vercel.app/api/check?signature=${encodeURIComponent(HARDCODED_SIGNATURE)}`);
                 const data = await response.json();
 
                 if (data.success) {
